@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Livros Mais Emprestados</title>
+</head>
+<body>
+    <h1>Livros Mais Emprestados</h1>
+    <ul>
+        {% for livro in livros_populares %}
+            <li>{{ livro.titulo }} - {{ livro.total_emprestimos }} empréstimos</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
